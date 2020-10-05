@@ -127,13 +127,11 @@ class TodoViewControler {
     //funkcja imitujaca przycisniecie przycisku RemoveTodo dla obiektu z id, pobierajaca id z argumentu funkcji
     func imaginaryButtonActionRemoveTodo(with id:Int) {
       print("\nRemoving task - entered ID: \(id)")
-      var neededIndex:Int
       for (index,dict) in remoteTodos.enumerated(){
         for elemInDict in dict{
           if elemInDict.key=="id"{
             if isEqual(type: Int.self, a: elemInDict.value, b: id){
-              neededIndex=index
-              remoteTodos.remove(at: neededIndex)
+              remoteTodos.remove(at: index)
               print("\nTask ID \(id) removed.")
               return
             }
