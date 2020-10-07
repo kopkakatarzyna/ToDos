@@ -1,0 +1,2 @@
+# ToDos
+Prosta aplikacja konsolowa pozwalająca zarządzać zadaniami do wykonania (ToDo). Umożliwia dodawanie kolejnych zadań z unikalnym numerem ID, modyfikację stanu zadania (status pola "completed": 0 dla niewykonanych i 1 dla wykonanych zadań) oraz usuwanie zadań z listy wg podanego ID. Najpierw wyświetlana jest prezentacja przykładowych operacji, po której użytkownik może sterować działaniami. Zadania nie są trwale zapisywane, lista resetuje się po każdym zamknięciu programu.
